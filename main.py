@@ -10,11 +10,11 @@ points = 0
 def start_exam():
   st.session_state.head = False
 def reveal_ans():
-  q1 = st.radio("",[])
-  q2 = st.radio("",[])
-  q3 = st.radio("",[])
-  q4 = st.radio("",[])
-  q5 = st.radio("",[])
+  q1 = st.radio("",[], key = "q1")
+  q2 = st.radio("",[], key = "q2")
+  q3 = st.radio("",[], key = "q3")
+  q4 = st.radio("",[], key = "q4")
+  q5 = st.radio("",[], key = "q5")
   
 
 st.title("MSE Maths and Science Exam")
@@ -25,15 +25,15 @@ if st.session_state.head:
   start = st.button("start exam" ,on_click = start_exam)
 else:
   st.markdown("#### science")
-  q1 = st.radio("What fundamental force is responsible for the attraction between objects with mass?", ["A) Electromagnetic Force","B) Strong Nuclear Force","C) Gravitational Force","D) Weak Nuclear Force"], index = None)
+  q1 = st.radio("What fundamental force is responsible for the attraction between objects with mass?", ["A) Electromagnetic Force","B) Strong Nuclear Force","C) Gravitational Force","D) Weak Nuclear Force"], index = None, key = "q1")
   st.markdown("---")
-  q2 = st.radio("Which organelle is often referred to as the 'powerhouse' of the cell because it generates most of the cell's supply of ATP (Adenosine Triphosphate)?", ["A) Nucleus","B) Mitochondrion","C) Endoplasmic Reticulum","D) Golgi Apparatus"], index = None)  
+  q2 = st.radio("Which organelle is often referred to as the 'powerhouse' of the cell because it generates most of the cell's supply of ATP (Adenosine Triphosphate)?", ["A) Nucleus","B) Mitochondrion","C) Endoplasmic Reticulum","D) Golgi Apparatus"], index = None, key = "q2")  
   st.markdown("---")
-  q3 = st.radio("What is the chemical symbol for the element Gold?", ["A) Ag","B) Fe","C) Pt","D) Au"], index = None)    
+  q3 = st.radio("What is the chemical symbol for the element Gold?", ["A) Ag","B) Fe","C) Pt","D) Au"], index = None, key = "q3")    
   st.markdown("---")
-  q4 = st.radio("What process involves the movement of water from the Earth's surface into the atmosphere, primarily as water vapor?", ["A) Condensation","B) Precipitation","C) Infiltration","D) Evaporation"], index = None)
+  q4 = st.radio("What process involves the movement of water from the Earth's surface into the atmosphere, primarily as water vapor?", ["A) Condensation","B) Precipitation","C) Infiltration","D) Evaporation"], index = None, key = "q4")
   st.markdown("---")
-  q5 = st.radio("Which of the following is the name given to a small, rocky body orbiting the Sun, typically found in the region between Mars and Jupiter?", ["A) Comet","B) Meteoroid","C) Asteroid","D) Planetoid"], index = None)
+  q5 = st.radio("Which of the following is the name given to a small, rocky body orbiting the Sun, typically found in the region between Mars and Jupiter?", ["A) Comet","B) Meteoroid","C) Asteroid","D) Planetoid"], index = None, key = "q5")
   st.markdown("---")
   if q1 == "C) Gravitational Force":
     points += 4
