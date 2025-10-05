@@ -47,10 +47,6 @@ else:
       points += 4
     else:
       points -= 1
-    if q1 == "C) Gravitational Force":
-      points += 4
-    else:
-      points -= 1
     if q5 == "C) Asteroid":
       points += 4
     else:
@@ -58,7 +54,7 @@ else:
     total = points
     revealans = st.button("submit", on_click = reveal_ans)
   else:
-    st.markdown(f"### you got {total} points")
+    st.markdown(f"### you got {st.session_state.rev_ans.total} points")
   
   
   
