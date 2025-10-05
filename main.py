@@ -8,7 +8,10 @@ def start_exam():
 
 st.title("MSE Maths and Scince Exam")
 if st.session_state.head:
-  st.subheader("click start exam to start the exam")
+  st.write("click start exam to start the exam")
+else:
+  st.write("scince")
+  st.radio("what is 2", ["VX","WFD","VFC",]
 
 start = st.button("start exam" ,on_click = start_exam)
 
