@@ -56,7 +56,9 @@ else:
     else:
       points -= 1
 
-  revealans = st.button("submit", on_click = reveal_ans)
+    revealans = st.button("submit", on_click = reveal_ans)
+  else:
+    st.markdown(f"### you got {points} points")
   
   
   
