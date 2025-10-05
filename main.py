@@ -14,7 +14,9 @@ def reveal_ans():
 
 st.title("MSE Maths and Science Exam")
 if st.session_state.head:
-  st.write("click start exam to start the exam     correct = +4      wrong = -1")
+  st.write("click start exam to start the exam ")
+  st.write("correct answer :  +4 points")
+  st.write("wrong answer :  -1 points")
   start = st.button("start exam" ,on_click = start_exam)
 else:
   if not st.session_state.rev_ans:
