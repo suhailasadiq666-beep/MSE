@@ -16,7 +16,7 @@ else:
   st.markdown("---")
   st.radio("Which organelle is often referred to as the 'powerhouse' of the cell because it generates most of the cell's supply of ATP (Adenosine Triphosphate)?", ["A) Nucleus","B) Mitochondrion","C) Endoplasmic Reticulum","D) Golgi Apparatus"], index = None)  
   st.markdown("---")
-  st.radio("What is the chemical symbol for the element Gold?", A) Ag","B) Fe","C) Pt","D) Au"], index = None)    
+  st.radio("What is the chemical symbol for the element Gold?", "A) Ag","B) Fe","C) Pt","D) Au"], index = None)    
   st.markdown("---")
   st.radio("What process involves the movement of water from the Earth's surface into the atmosphere, primarily as water vapor?", A) Condensation","B) Precipitation","C) Infiltration","D) Evaporation"], index = None)
   st.markdown("---")
