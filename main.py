@@ -18,9 +18,9 @@ else:
   st.markdown("---")
   st.radio("What is the chemical symbol for the element Gold?", ["A) Ag","B) Fe","C) Pt","D) Au"], index = None)    
   st.markdown("---")
-  st.radio("What process involves the movement of water from the Earth's surface into the atmosphere, primarily as water vapor?", "A) Condensation","B) Precipitation","C) Infiltration","D) Evaporation"], index = None)
+  st.radio("What process involves the movement of water from the Earth's surface into the atmosphere, primarily as water vapor?", ["A) Condensation","B) Precipitation","C) Infiltration","D) Evaporation"], index = None)
   st.markdown("---")
-  st.radio("Which of the following is the name given to a small, rocky body orbiting the Sun, typically found in the region between Mars and Jupiter?", "A) Comet","B) Meteoroid","C) Asteroid","D) Planetoid"], index = None)
+  st.radio("Which of the following is the name given to a small, rocky body orbiting the Sun, typically found in the region between Mars and Jupiter?", ["A) Comet","B) Meteoroid","C) Asteroid","D) Planetoid"], index = None)
 
 
 
