@@ -14,7 +14,7 @@ def reveal_ans():
 
 st.title("MSE Maths and Science Exam")
 if st.session_state.head:
-  st.write(["click start exam to start the exam", "correct = +4      wrong = -1"])
+  st.write("click start exam to start the exam     correct = +4      wrong = -1")
   start = st.button("start exam" ,on_click = start_exam)
 else:
   if not st.session_state.rev_ans:
@@ -30,29 +30,29 @@ else:
     q5 = st.radio("Which of the following is the name given to a small, rocky body orbiting the Sun, typically found in the region between Mars and Jupiter?", ["A) Comet","B) Meteoroid","C) Asteroid","D) Planetoid"], index = None)
     st.markdown("---")
   if q1 == "C) Gravitational Force":
-    point += 4
+    points += 4
   else:
-    point -= 1
+    points -= 1
   if q2 == "B) Mitochondrion":
-    point += 4
+    points += 4
   else:
-    point -= 1
+    points -= 1
   if q3 == "D) Au":
-    point += 4
+    points += 4
   else:
-    point -= 1
+    points -= 1
   if q4 == "D) Evaporation":
-    point += 4
+    points += 4
   else:
-    point -= 1
+    points -= 1
   if q1 == "C) Gravitational Force":
-    point += 4
+    points += 4
   else:
-    point -= 1
+    points -= 1
   if q5 == "C) Asteroid":
-    point += 4
+    points += 4
   else:
-    point -= 1
+    points -= 1
 
   revealans = st.button("submit", on_click = reveal_ans)
   
