@@ -29,30 +29,30 @@ else:
     st.markdown("---")
     q5 = st.radio("Which of the following is the name given to a small, rocky body orbiting the Sun, typically found in the region between Mars and Jupiter?", ["A) Comet","B) Meteoroid","C) Asteroid","D) Planetoid"], index = None)
     st.markdown("---")
-  if q1 == "C) Gravitational Force":
-    points += 4
-  else:
-    points -= 1
-  if q2 == "B) Mitochondrion":
-    points += 4
-  else:
-    points -= 1
-  if q3 == "D) Au":
-    points += 4
-  else:
-    points -= 1
-  if q4 == "D) Evaporation":
-    points += 4
-  else:
-    points -= 1
-  if q1 == "C) Gravitational Force":
-    points += 4
-  else:
-    points -= 1
-  if q5 == "C) Asteroid":
-    points += 4
-  else:
-    points -= 1
+    if q1 == "C) Gravitational Force":
+      points += 4
+    else:
+      points -= 1
+    if q2 == "B) Mitochondrion":
+      points += 4
+    else:
+      points -= 1
+    if q3 == "D) Au":
+      points += 4
+    else:
+      points -= 1
+    if q4 == "D) Evaporation":
+      points += 4
+    else:
+      points -= 1
+    if q1 == "C) Gravitational Force":
+      points += 4
+    else:
+      points -= 1
+    if q5 == "C) Asteroid":
+      points += 4
+    else:
+      points -= 1
 
   revealans = st.button("submit", on_click = reveal_ans)
   
