@@ -6,6 +6,7 @@ if "rev_ans" not in st.session_state:
   st.session_state.rev_ans = False
 
 points = 0
+st.title("MSE Maths and Science Exam")
 
 def start_exam():
   st.session_state.head = False
@@ -16,7 +17,7 @@ place = st.empty()
 
   
 
-st.title("MSE Maths and Science Exam")
+
 if st.session_state.head:
   st.write("click start exam to start the exam ")
   st.write("correct answer :  +4 points")
