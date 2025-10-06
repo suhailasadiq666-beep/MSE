@@ -65,7 +65,7 @@ else:
   else:
     points -= 1
   total = points
-  if st.button("submit"):
+  if place.empty(st.button("submit")):
     place.empty()
     st.markdown(f"### you got {total} points")
   
