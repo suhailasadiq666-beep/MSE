@@ -48,7 +48,7 @@ else:
     points -= 1
   if q3 == "D) Au":
     points += 4
-    elif q3 == None:
+  elif q3 == None:
     points += 0
   else:
     points -= 1
