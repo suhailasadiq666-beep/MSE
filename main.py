@@ -36,22 +36,32 @@ else:
     st.markdown("---")
   if q1 == "C) Gravitational Force":
     points += 4
+  elif q1 == None:
+    points += 0
   else:
     points -= 1
   if q2 == "B) Mitochondrion":
     points += 4
+  elif q2 == None:
+    points += 0
   else:
     points -= 1
   if q3 == "D) Au":
     points += 4
+    elif q3 == None:
+    points += 0
   else:
     points -= 1
   if q4 == "D) Evaporation":
     points += 4
+  elif q4 == None:
+    points += 0
   else:
     points -= 1
   if q5 == "C) Asteroid":
     points += 4
+  elif q5 == None:
+    points += 0
   else:
     points -= 1
   total = points
