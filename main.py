@@ -10,11 +10,7 @@ points = 0
 def start_exam():
   st.session_state.head = False
 def reveal_ans():
-  q1 = st.radio("",[], key = "qq1")
-  q2 = st.radio("",[], key = "qq2")
-  q3 = st.radio("",[], key = "qq3")
-  q4 = st.radio("",[], key = "qq4")
-  q5 = st.radio("",[], key = "qq5")
+  st.clear()
   
 
 st.title("MSE Maths and Science Exam")
