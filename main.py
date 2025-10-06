@@ -70,7 +70,7 @@ else:
     if hold.button("submit"):
         place.empty()
         hold.empty()
-        st.markdown(f"### you got {total} points")
+        hold.markdown(f"### you got {total} points")
   
   
 
