@@ -55,7 +55,7 @@ else:
   else:
     points -= 1
   total = points
-  if place.button("submit"):
+  if st.button("submit"):
     place.empty()
   
   
