@@ -56,7 +56,7 @@ else:
     points -= 1
   total = points
   rev = st.button("submit")
-  if rev:
+  if place.rev:
     place.empty()
     with place.container():
       st.write(f"your got {total} points")
