@@ -12,6 +12,7 @@ def start_exam():
   st.session_state.head = False
 
 place = st.empty()
+hold = st.empty()
 
   
 
@@ -65,9 +66,11 @@ else:
   else:
     points -= 1
   total = points
-  if place.empty(st.button("submit")):
-    place.empty()
-    st.markdown(f"### you got {total} points")
+  with hold.container():
+    if hold.button("submit"):
+        place.empty()
+        hold.empty()
+        st.markdown(f"### you got {total} points")
   
   
 
