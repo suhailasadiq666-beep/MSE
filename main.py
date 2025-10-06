@@ -21,7 +21,7 @@ if st.session_state.head:
   st.write("wrong answer :  -1 points")
   start = st.button("start exam" ,on_click = start_exam)
 else:
-  place.markdown("#### science")
+  place.scince = st.markdown("#### science")
   place.q1 = st.radio("What fundamental force is responsible for the attraction between objects with mass?", ["A) Electromagnetic Force","B) Strong Nuclear Force","C) Gravitational Force","D) Weak Nuclear Force"], index = None, key = "q1")
   place.st.markdown("---")
   place.q2 = st.radio("Which organelle is often referred to as the 'powerhouse' of the cell because it generates most of the cell's supply of ATP (Adenosine Triphosphate)?", ["A) Nucleus","B) Mitochondrion","C) Endoplasmic Reticulum","D) Golgi Apparatus"], index = None, key = "q2")  
