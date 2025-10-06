@@ -9,6 +9,8 @@ points = 0
 
 def start_exam():
   st.session_state.head = False
+def reveal_ans():
+  place.empty()
 
 place = st.empty()
 
@@ -56,8 +58,7 @@ else:
   total = points
   revealans = st.button("submit", on_click = reveal_ans)
 
-def reveal_ans():
-  place.empty()
+
   
   
   
