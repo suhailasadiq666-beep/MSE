@@ -10,8 +10,6 @@ st.title("MSE Maths and Science Exam")
 
 def start_exam():
   st.session_state.head = False
-def reveal_ans():
-  place.empty()
 
 place = st.empty()
 
@@ -57,7 +55,9 @@ else:
   else:
     points -= 1
   total = points
-  revealans = st.button("submit", on_click = reveal_ans)
+if place.button("submit"):
+  place.empty()
+  
 
 
   
