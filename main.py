@@ -166,7 +166,7 @@ else:
     points += 0
   else:
     points -= 1
-  if q16 == "A) 7 meters":
+  if q16 == "A) 7 meters":
     points += 4
   elif q16 == None:
     points += 0
@@ -203,6 +203,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
