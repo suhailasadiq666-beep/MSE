@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-img = Image.open("MSE.png")
+img = Image.open("MSE.png.png")
 st.set_page_config(
   page_title = "MSE Math and Science Exam",
   page_icon = img,
@@ -122,3 +122,4 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
