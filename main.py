@@ -3,8 +3,8 @@ from PIL import Image
 
 img = Image.open("MSE.png")
 st.set_page_config(
-  page_title = "MSE Math and Science Exam"
-  page_icon = img
+  page_title = "MSE Math and Science Exam",
+  page_icon = img,
   layout = "wide"
 )
 
