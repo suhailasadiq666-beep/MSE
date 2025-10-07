@@ -69,7 +69,11 @@ else:
     st.markdown("---")
     q17 = st.radio("**Q17)Simplify the expression: 2(x−3)+5x**", ["A) 7x−3","B) 7x−6","C) 3x−6","D) 7x+6"], index = None, key = "q17")    
     st.markdown("---")
-    q18 = st.radio("**Q18)Evaluate the expression 4 ^3 − $\sqrt{49}",["C) 3x−6","D) 7x+6"], index = None, key = "q18")    
+    q18 = st.radio("**Q18)Evaluate the expression 4 ^3 − square root of 49",["A) 60","B) 57","C) 38","D) 71"], index = None, key = "q18")    
+    st.markdown("---")
+    q19 = st.radio("**Q19)What is the median of the following set of numbers: 5,2,8,1,4?",["A) 4","B) 5","C) 20","D) 8"], index = None, key = "q19")    
+    st.markdown("---")
+    q20 = st.radio("**Q20)A bag contains 3 red marbles and 7 blue marbles. If one marble is drawn at random, what is the probability that it is a red marble?",["A) 3/7","B) 7/10","C) 3/10","D) 1/3"], index = None, key = "q20")    
     st.markdown("---")
   
   if q1 == "C) Gravitational Force":
@@ -132,13 +136,74 @@ else:
     points += 0
   else:
     points -= 1
-    
+  if q11 == "B) 12":
+    points += 4
+  elif q11 == None:
+    points += 0
+  else:
+    points -= 1
+  if q12 == "B) 39":
+    points += 4
+  elif q12 == None:
+    points += 0
+  else:
+    points -= 1
+  if q13 == "C) 37":
+    points += 4
+  elif q13 == None:
+    points += 0
+  else:
+    points -= 1
+  if q14 == "C) 30 cm":
+    points += 4
+  elif q14 == None:
+    points += 0
+  else:
+    points -= 1
+  if q15 == "A) 70∘":
+    points += 4
+  elif q15 == None:
+    points += 0
+  else:
+    points -= 1
+  if q16 == "A) 7 meters":
+    points += 4
+  elif q16 == None:
+    points += 0
+  else:
+    points -= 1
+  if q17 == "B) 7x-3":
+    points += 4
+  elif q17 == None:
+    points += 0
+  else:
+    points -= 1
+  if q18 == "B) 57":
+    points += 4
+  elif q18 == None:
+    points += 0
+  else:
+    points -= 1
+  if q19 == "A) 4":
+    points += 4
+  elif q19 == None:
+    points += 0
+  else:
+    points -= 1
+  if q20 == "C) 3/10":
+    points += 4
+  elif q20 == None:
+    points += 0
+  else:
+    points -= 1
+  
   total = points
   with hold.container():
     if hold.button("submit"):
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
