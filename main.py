@@ -122,15 +122,3 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
-  
-  
-
-
-  
-  
-  
-    
-  
-
-
-
