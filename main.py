@@ -154,7 +154,7 @@ else:
     points += 0
   else:
     points -= 1
-  if q14 == "C) 30 cm":
+  if q14 == "C) 30 cm":
     points += 4
   elif q14 == None:
     points += 0
@@ -203,6 +203,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
