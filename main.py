@@ -69,11 +69,11 @@ else:
     st.markdown("---")
     q17 = st.radio("**Q17)Simplify the expression: 2(x−3)+5x**", ["A) 7x−3","B) 7x−6","C) 3x−6","D) 7x+6"], index = None, key = "q17")    
     st.markdown("---")
-    q18 = st.radio("**Q18)Evaluate the expression 4 ^3 − square root of 49",["A) 60","B) 57","C) 38","D) 71"], index = None, key = "q18")    
+    q18 = st.radio("**Q18)Evaluate the expression 4 ^3 − square root of 49**",["A) 60","B) 57","C) 38","D) 71"], index = None, key = "q18")    
     st.markdown("---")
-    q19 = st.radio("**Q19)What is the median of the following set of numbers: 5,2,8,1,4?",["A) 4","B) 5","C) 20","D) 8"], index = None, key = "q19")    
+    q19 = st.radio("**Q19)What is the median of the following set of numbers: 5,2,8,1,4?",["A) 4","B) 5"**,"C) 20","D) 8"], index = None, key = "q19")    
     st.markdown("---")
-    q20 = st.radio("**Q20)A bag contains 3 red marbles and 7 blue marbles. If one marble is drawn at random, what is the probability that it is a red marble?",["A) 3/7","B) 7/10","C) 3/10","D) 1/3"], index = None, key = "q20")    
+    q20 = st.radio("**Q20)A bag contains 3 red marbles and 7 blue marbles. If one marble is drawn at random, what is the probability that it is a red marble?**",["A) 3/7","B) 7/10","C) 3/10","D) 1/3"], index = None, key = "q20")    
     st.markdown("---")
   
   if q1 == "C) Gravitational Force":
@@ -203,6 +203,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
