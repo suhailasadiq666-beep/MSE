@@ -69,7 +69,7 @@ else:
     st.markdown("---")
     q17 = st.radio("**Q17)Simplify the expression: 2(x−3)+5x**", ["A) 7x−3","B) 7x−6","C) 3x−6","D) 7x+6"], index = None, key = "q17")    
     st.markdown("---")
-    q18 = st.radio("**Q18)Evaluate the expression 4 ^3 − $\sqrt49",["C) 3x−6","D) 7x+6"], index = None, key = "q18")    
+    q18 = st.radio("**Q18)Evaluate the expression 4 ^3 − $\sqrt{49}",["C) 3x−6","D) 7x+6"], index = None, key = "q18")    
     st.markdown("---")
   
   if q1 == "C) Gravitational Force":
@@ -139,6 +139,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
