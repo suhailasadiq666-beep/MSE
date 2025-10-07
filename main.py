@@ -33,7 +33,7 @@ if st.session_state.head:
   start = st.button("start exam" ,on_click = start_exam)
 else:
   with place.container():
-    scince = st.markdown("#### Science")
+    scince = st.markdown("### Science")
     q1 = st.radio("**Q1)What fundamental force is responsible for the attraction between objects with mass?**", ["A) Electromagnetic Force","B) Strong Nuclear Force","C) Gravitational Force","D) Weak Nuclear Force"], index = None, key = "q1")
     st.markdown("---")
     q2 = st.radio("**Q2)Which organelle is often referred to as the 'powerhouse' of the cell because it generates most of the cell's supply of ATP (Adenosine Triphosphate)?**", ["A) Nucleus","B) Mitochondrion","C) Endoplasmic Reticulum","D) Golgi Apparatus"], index = None, key = "q2")  
@@ -54,7 +54,24 @@ else:
     st.markdown("---")
     q10 = st.radio("**Q10)Which state of matter has a definite volume but no definite shape?**", ["A) Solid","B) Liquid","C) Gas","D) Plasma"], index = None, key = "q10")    
     st.markdown("---")
-    
+    maths = st.markdown("### Maths")
+    q11 = st.radio("**Q11)What is 15% of 80?**", ["A) 10","B) 12","C) 15","D) 8"], index = None, key = "q11")    
+    st.markdown("---")
+    q12 = st.radio("**Q12)If x+7=20, what is the value of 3x?**", ["A) 13","B) 39","C) 60","D) 45"], index = None, key = "q12")    
+    st.markdown("---")
+    q13 = st.radio("**Q13)Which of the following is a prime number?**", ["A) 9","B) 21","C) 37","D) 51"], index = None, key = "q13")    
+    st.markdown("---")
+    q14 = st.radio("**Q14)A rectangle has a length of 10 cm and a width of 5 cm. What is its perimeter?**", ["A) 15 cm","B) 50 cm2","C) 30 cm","D) 25 cm"], index = None, key = "q14")    
+    st.markdown("---")
+    q15 = st.radio("**Q15)What is the measure of the third angle in a triangle if the other two angles measure 45∘ and 65∘ ?**", ["A) 70∘","B) 80∘","C) 90∘","D) 110∘"], index = None, key = "q15")    
+    st.markdown("---")
+    q16 = st.radio("**Q16)The diameter of a circle is 14 meters. What is its radius?**", ["A) 7 meters","B) 14 meters","C) 28 meters","D) 3.5 meters"], index = None, key = "q16")    
+    st.markdown("---")
+    q17 = st.radio("**Q17)Simplify the expression: 2(x−3)+5x**", ["A) 7x−3","B) 7x−6","C) 3x−6","D) 7x+6"], index = None, key = "q17")    
+    st.markdown("---")
+    q18 = st.radio("**Q18)Evaluate the expression 4 ^3 − $\sqrt49","C) 3x−6","D) 7x+6"], index = None, key = "q18")    
+    st.markdown("---")
+  
   if q1 == "C) Gravitational Force":
     points += 4
   elif q1 == None:
@@ -122,4 +139,5 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
