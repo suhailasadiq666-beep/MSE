@@ -77,9 +77,9 @@ else:
     st.markdown("---")
     st.write("**In a room, there are three people: Alice, Bob, and Carol. One of them is a truth-teller (always tells the truth), and the other two are liars (always lie).**")
     st.write("**They make the following statements:**")
-    st.write("**      Alice: "Bob is a liar.**)
-    st.write("**      Bob: "Carol is a liar."**)
-    st.write("**      Carol: "I am the truth-teller."**)
+    st.write("**      Alice: "Bob is a liar.**")
+    st.write("**      Bob: "Carol is a liar.**")
+    st.write("**      Carol: "I am the truth-teller.**")
     q21 = st.radio("**Q21)Who is the truth-teller?",["A) Alice", "B) Bob", "C) Carol", "D) Cannot be determined"], index = None, key = "q21")    
     st.markdown("---")
     
@@ -211,6 +211,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
