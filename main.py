@@ -75,6 +75,14 @@ else:
     st.markdown("---")
     q20 = st.radio("**Q20)A bag contains 3 red marbles and 7 blue marbles. If one marble is drawn at random, what is the probability that it is a red marble?**",["A) 3/7","B) 7/10","C) 3/10","D) 1/3"], index = None, key = "q20")    
     st.markdown("---")
+    st.write("**In a room, there are three people: Alice, Bob, and Carol. One of them is a truth-teller (always tells the truth), and the other two are liars (always lie).**")
+    st.write("**They make the following statements:**")
+    st.write("**      Alice: "Bob is a liar.**)
+    st.write("**      Bob: "Carol is a liar."**)
+    st.write("**      Carol: "I am the truth-teller."**)
+    q21 = st.radio("**Q21)Who is the truth-teller?",["A) Alice", "B) Bob", "C) Carol", "D) Cannot be determined"], index = None, key = "q21")    
+    st.markdown("---")
+    
   
   if q1 == "C) Gravitational Force":
     points += 4
@@ -203,6 +211,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
