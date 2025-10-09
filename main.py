@@ -80,7 +80,7 @@ else:
     st.write("**Alice: Bob is a liar.**")
     st.write("**Bob: Carol is a liar.**")
     st.write("**Carol: I am the truth-teller.**")
-    q21 = st.radio("**Q21)Who is the truth-teller?",["A) Alice", "B) Bob", "C) Carol", "D) Cannot be determined"], index = None, key = "q21")    
+    q21 = st.radio("**Q21)Who is the truth-teller?",["A) Alice**", "B) Bob", "C) Carol", "D) Cannot be determined"], index = None, key = "q21")    
     st.markdown("---")
     
   
@@ -211,6 +211,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
