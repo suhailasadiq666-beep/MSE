@@ -248,26 +248,28 @@ else:
     points += 0
   else:
     points -= 1
-  timer = 3100
-  
+    
   total = points
   with hold.container():
     if hold.button("submit"):
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
-    
+
+timer = 3100
+if not st.session_state.head:  
   while True:
-    with tmer.container():
-      time.sleep(1)
-      timer -= 1
-      st.markdown(timer)
+      with tmer.container():
+        time.sleep(1)
+        timer -= 1
+        st.markdown(timer)
 
 
 
 
     
   
+
 
 
 
