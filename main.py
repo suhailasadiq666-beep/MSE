@@ -23,7 +23,6 @@ def start_exam():
 
 place = st.empty()
 hold = st.empty()
-tmer = st.empty()
 
 
 
@@ -255,14 +254,8 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
-  timer = 3100
-  st.stop()
-  while True:
-    st.rerun()
-    with tmer.container():
-      time.sleep(1)
-      timer -= 1
-      st.markdown(timer)
+
+
 
 
 
