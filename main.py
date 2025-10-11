@@ -255,8 +255,6 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
-  st.stop()
-  st.rerun()
   timer = 3100
   if not st.session_state.head:  
     while True:
@@ -264,6 +262,7 @@ else:
           time.sleep(1)
           timer -= 1
           st.markdown(timer)
+
 
 
 
