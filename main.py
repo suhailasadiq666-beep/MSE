@@ -255,13 +255,15 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
-st.stop()
-timer = 3100
-if not st.session_state.head:  
-  while True:
-      with tmer.container():
-        time.sleep(1)
-        timer -= 1
-        st.markdown(timer)
+  st.stop()
+  st.rerun()
+  timer = 3100
+  if not st.session_state.head:  
+    while True:
+        with tmer.container():
+          time.sleep(1)
+          timer -= 1
+          st.markdown(timer)
+
 
 
