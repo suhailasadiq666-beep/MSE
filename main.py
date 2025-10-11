@@ -83,9 +83,13 @@ else:
     st.write("**Carol: I am the truth-teller.**")
     q21 = st.radio("**Who is the truth-teller?**",["A) Alice", "B) Bob", "C) Carol", "D) Cannot be determined"], index = None, key = "q21")    
     st.markdown("---")
-    q22 = st.radio("**Q22)One mother have 4 Daughers. if all the daughtes have 1 brother how many children does the mother have?**",["A) 1", "B) 4", "C) 5", "D) 8"], index = None, key = "q22")    
+    q22 = st.radio("**Q22)Mary have 4 Daughers and all the daughtes have 1 brother.how many children does Mary have?**",["A) 1", "B) 4", "C) 5", "D) 8"], index = None, key = "q22")    
     st.markdown("---")
     q23 = st.radio("**Q23)A farmer has 17 sheep.All but 9 of them run away.How many sheep does the farmer have left?**",["A) 17", "B) 8", "C) 9", "D) 0"], index = None, key = "q23")    
+    st.markdown("---")
+    q24 = st.radio("**Q24)A plane crashes on the border of India and Pakistan.Where do you bury the survivors**",["A) In India", "B) In Pakistan", "C) In a neutral country", "D) Dont Bury them"], index = None, key = "q24")    
+    st.markdown("---")
+    q25 = st.radio("**Q25)A pond has flowers that double in number every day.if the pond is compeletey full on the 14th day, on which day was it half full**",["A) 15", "B) 7", "C) 28", "D) 13"], index = None, key = "q25")    
     st.markdown("---")
     
     
@@ -229,6 +233,18 @@ else:
     points += 0
   else:
     points -= 1
+  if q24 == "D) Dont Bury them":
+    points += 4
+  elif q24 == None:
+    points += 0
+  else:
+    points -= 1
+  if q25 == "D) 13":
+    points += 4
+  elif q25 == None:
+    points += 0
+  else:
+    points -= 1
   
   total = points
   with hold.container():
@@ -236,6 +252,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
