@@ -28,9 +28,10 @@ hold = st.empty()
 
 
 if st.session_state.head:
-  st.write("click start exam to start the exam ")
-  st.write("correct answer :  +4 points")
-  st.write("wrong answer :  -1 points")
+  st.markdown("### Click start exam to start the exam ")
+  st.markdown("### Correct answer :  +4 points", ":white_check_mark:")
+  st.markdown("### Wrong answer :  -1 points")
+  st.markdown("### Time: 35:00")
   start = st.button("start exam" ,on_click = start_exam)
 else:
   with place.container():
@@ -264,6 +265,7 @@ while True:
     st.markdown(timer)
     
   
+
 
 
 
