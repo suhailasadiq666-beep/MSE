@@ -31,7 +31,6 @@ if st.session_state.head:
   st.markdown("### Click start exam to start the exam ")
   st.markdown("### Correct answer :  +4 points  :heavy_check_mark:")
   st.markdown("### Wrong answer :  -1 points :x:")
-  st.markdown("### Time: 35:00 :clock3:")
   start = st.button("start exam" ,on_click = start_exam)
 else:
   with place.container():
@@ -254,6 +253,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
