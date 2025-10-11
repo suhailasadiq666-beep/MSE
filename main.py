@@ -204,6 +204,12 @@ else:
     points += 0
   else:
     points -= 1
+  if q21 == "B) Bob":
+    points += 4
+  elif q21 == None:
+    points += 0
+  else:
+    points -= 1
   
   total = points
   with hold.container():
@@ -211,6 +217,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
