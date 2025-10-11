@@ -25,7 +25,8 @@ place = st.empty()
 hold = st.empty()
 tmer = st.empty()
 
-  
+st.stop()
+st.rerun()
 
 
 if st.session_state.head:
@@ -262,6 +263,7 @@ else:
           time.sleep(1)
           timer -= 1
           st.markdown(timer)
+
 
 
 
