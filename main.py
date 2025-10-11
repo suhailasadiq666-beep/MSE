@@ -256,14 +256,15 @@ else:
 
 tmer = st.empty()
 
+timer = 3100
 while True:
   with tmer.container():
-    timer = 3100
     time.sleep(1)
     timer -= 1
     st.markdown(timer)
     
   
+
 
 
 
