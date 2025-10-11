@@ -249,11 +249,6 @@ else:
   else:
     points -= 1
   timer = 3100
-  while True:
-    with tmer.container():
-      time.sleep(1)
-      timer -= 1
-      st.markdown(timer)
   
   total = points
   with hold.container():
@@ -261,12 +256,18 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+    
+  with tmer.container():
+    time.sleep(1)
+    timer -= 1
+    st.markdown(timer)
 
 
 
 
     
   
+
 
 
 
