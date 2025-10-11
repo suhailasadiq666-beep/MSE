@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 from PIL import Image
 
 img = Image.open("MSE.png.png")
@@ -253,8 +254,12 @@ else:
         hold.empty()
         hold.markdown(f"### you got {total} points")
 
-
-
+timer = 3100
+while True:
+  time.sleep(1)
+  timer -= 1
+  st.markdown(timer)
+  
 
 
 
