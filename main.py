@@ -85,6 +85,9 @@ else:
     st.markdown("---")
     q22 = st.radio("**Q22)One mother have 4 Daughers. if all the daughtes have 1 brother how many children does the mother have?**",["A) 1", "B) 4", "C) 5", "D) 8"], index = None, key = "q22")    
     st.markdown("---")
+    q23 = st.radio("**Q23)A farmer has 17 sheep.All but 9 of them run away.How many sheep does the farmer have left?**",["A) 17", "B) 8", "C) 9", "D) 0"], index = None, key = "q23")    
+    st.markdown("---")
+    
     
     
   
@@ -220,6 +223,12 @@ else:
     points += 0
   else:
     points -= 1
+  if q23 == "C) 9":
+    points += 4
+  elif q23 == None:
+    points += 0
+  else:
+    points -= 1
   
   total = points
   with hold.container():
@@ -227,6 +236,7 @@ else:
         place.empty()
         hold.empty()
         hold.markdown(f"### you got {total} points")
+
 
 
 
