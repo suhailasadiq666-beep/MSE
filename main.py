@@ -254,12 +254,17 @@ else:
         hold.empty()
         hold.markdown(f"### you got {total} points")
 
-timer = 3100
+tmer = st.empty()
+
 while True:
-  time.sleep(1)
-  timer -= 1
-  st.markdown(timer)
+  with tmer.container():
+    timer = 3100
+    time.sleep(1)
+    timer -= 1
+    st.markdown(timer)
+    
   
+
 
 
 
